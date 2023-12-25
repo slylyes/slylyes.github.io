@@ -1,0 +1,451 @@
+@font-face {
+	font-family: 'Retro Gaming';
+	src: url(/home/lyes/L2/Web/projets-web/site-10-portfolio/styles/Retro\ Gaming.ttf) format('woff2');
+
+}
+
+
+/* .upside{
+	background-image: url(/home/lyes/L2/Web/projets-web/site-10-portfolio/images/upsideDown.jpg);
+}
+ */
+.hidden {
+	display: none;
+}
+
+.niveau {
+	position: relative;
+	text-decoration: solid;
+	bottom: 271px;
+}
+
+
+
+body {
+	background-image: url(/home/lyes/L2/Web/projets-web/site-10-portfolio/images/neonBackground.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+
+}
+
+/* Header*/
+
+header {
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(10px);
+	color: white;
+	text-decoration: none;
+	padding: 30px;
+	padding-bottom: 40px;
+	font-size: 20px;
+	font-family: fantasy;
+	z-index: 5;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+
+nav a {
+	color: rgba(255, 255, 255, 1);
+	position: relative;
+	transition: .5s;
+}
+
+B {
+	font-size: x-large;
+}
+
+nav a:hover {
+	color: white;
+	text-decoration: none;
+
+}
+
+
+/*main*/
+
+
+/* Acceuil */
+
+
+.block {
+	background-color: rgba(0, 0, 0, 0.7);
+	backdrop-filter: blur(5px);
+	border-radius: 35px;
+	padding: 20px;
+	font-family: 'Retro Gaming', sans-serif;
+	color: white;
+
+}
+
+@media(min-width: 900px) {
+	.block {
+		margin: 10% 8%;
+
+	}
+}
+
+
+
+main h1 {
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+	font-size: 80px;
+	margin-bottom: 45px;
+}
+
+main p {
+	font-size: larger;
+	margin-bottom: 40px;
+}
+
+#start {
+	width: 10%;
+	display: none;
+	animation: zoom 1s forwards;
+}
+
+@media(max-width:960px) {
+	#start {
+		width: 30%;
+	}
+
+	.block {
+		margin: 5% 7%;
+	}
+
+	.niveau {
+		position: relative;
+		top: 50px
+	}
+}
+
+@media(max-width:720px) {
+	#start {
+		width: 30%;
+	}
+
+	main h1 {
+		color: rgba(255, 255, 255, 1);
+		text-align: center;
+		font-size: 40px;
+	}
+
+
+}
+
+
+
+@keyframes zoom {
+	0% {
+		transform: scale(0);
+		display: block;
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* Présentation */
+
+
+.pos {
+	height: 30px;
+}
+
+#presentation h2 {
+	text-align: center;
+	font-size: 70px;
+	margin-bottom: 40px;
+}
+
+
+@media(max-width:720px) {
+	#presentation h2 {
+		font-size: 30px;
+	}
+}
+
+h2+p {
+	text-align: center;
+	color: #ffc500;
+}
+
+.aspect {
+	width: 10%;
+	padding: 20px;
+	margin-left: 180px;
+	margin-right: 150px;
+	display: inline-block;
+}
+
+@media(max-width:960px) {
+	.aspect {
+		width:30%;
+		display: block;
+		margin: 0;
+
+	}
+}
+
+@media(max-width:720px) {
+	.aspect {
+		width:40%;
+		display: block;
+		margin: 0;
+	}
+}
+
+
+.label span {
+	font-size: x-large;
+	margin-left: 164px;
+	margin-right: 135px;
+}
+
+@media(max-width:960px) {
+	.label span {
+		display: block;
+		position: relative;
+		left: 172px;
+		bottom: 810px;
+		margin: 200px;
+	}
+}
+
+@media(max-width:720px) {
+	.label span {
+		font-size: large;
+		margin-left: 0px;
+		margin-right: 120px;
+	}
+}
+
+
+
+u {
+	color: #ffc500;
+}
+
+#etoile {
+	width: 1%;
+	position: fixed;
+	bottom: 517px;
+	left: 269px;
+
+}
+
+@media(max-width:960px) {
+	#etoile {
+		width: 2%;
+		position: fixed;
+		bottom: 1488px;
+		left: 88px;
+		float: left;
+	}
+
+}
+
+#tricher {
+	background-color: white;
+}
+
+/*FORMATIONS*/
+
+#formations h2 {
+	text-align: center;
+	font-size: 70px;
+	margin-bottom: 40px;
+}
+
+@media(max-width:720px){
+	#formations h2{
+		font-size: 30px;
+	}
+}
+
+#licence {
+	width: 40%;
+	margin: 50px;
+	padding: 30px;
+}
+
+
+#licence p {
+	position: relative;
+	left: 829px;
+	bottom: 61px;
+	font-size: xx-large;
+}
+
+@media(max-width:960px){
+	#licence p {
+		position: relative;
+		left: 374px;
+		bottom: 143px;
+		font-size: xx-large;
+	}
+	
+}
+
+@media(max-width:720px){
+	#licence{
+		width:70%;
+	}
+	#licence h3{
+		font-size: larger;
+	}
+}
+
+#portail {
+	width: 40%;
+	margin-left: 770px;
+	padding: 30px;
+}
+
+
+#portail p {
+	position: relative;
+	right: 500px;
+	bottom: 61px;
+	font-size: xx-large;
+}
+
+
+@media(max-width:960px){
+	#portail {
+		margin-left: 50px;
+		padding: 30px;
+	}
+	#portail p{
+		left:374px;
+		bottom:143px;
+	}
+	
+}
+@media(max-width:720px){
+	#portail{
+		width:70%;
+	}
+	#portail h3{
+		font-size: larger;
+	}
+}
+#bac {
+	width: 40%;
+	margin: 30px;
+	padding: 30px;
+}
+
+#bac p{
+	position: relative;
+	left: 829px;
+	bottom: 61px;
+	font-size: xx-large;
+}
+
+@media(max-width:960px){
+	#bac {
+		margin-left: 50px;
+		padding: 30px;
+	}
+	#bac p{
+		left:374px;
+		bottom:143px;
+	}
+}
+
+
+@media(max-width:720px){
+	#bac{
+		width:70%;
+	}
+	#bac h3{
+		font-size: larger;
+	}
+}
+
+.timeline:after {
+	content: "";
+	position: absolute;
+	top: 20px;
+	bottom: 20px;
+	left: 47%;
+	width: 5px;
+	background: white;
+	border-radius: 3px;
+	z-index: 1;
+	margin-top: 260px;
+	margin-bottom: 170px;
+}
+
+@media(max-width:960px){
+	.timeline:after{
+		display: none;
+	}
+}
+
+
+
+.images {
+	width: 6%;
+	display: inline-block;
+}
+
+
+
+/* Projets */
+#projets h2 {
+	text-align: center;
+	font-size: 70px;
+	margin-bottom: 40px;
+}
+
+@media(max-width:720px){
+	#projets h2{
+		font-size: 30px;
+	}
+}
+
+/* Contact */
+#contact h2 {
+	text-align: center;
+	font-size: 70px;
+	margin-bottom: 40px;
+}
+
+@media(max-width:720px){
+	#contact h2{
+		font-size: 30px;
+	}
+}
+form{
+	display: block;
+}
+
+form input{
+	margin: 10px;
+	padding: 10px;
+}
+
+#contact p{
+	color:white;
+}
+
+/* Footer */
+
+footer p{
+	background-color: rgba(0, 0, 0, 0.9);
+	color: white;
+	padding: 50px;
+	font-size: xx-large;
+	text-align: center;
+}
