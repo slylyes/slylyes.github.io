@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Retro Gaming';
-	src: url(/home/lyes/L2/Web/projets-web/site-10-portfolio/styles/Retro\ Gaming.ttf) format('woff2');
+	src: url(Retro\ Gaming.ttf) format('woff2');
 
 }
 
@@ -22,7 +22,7 @@
 
 
 body {
-	background-image: url(/home/lyes/L2/Web/projets-web/site-10-portfolio/images/neonBackground.jpg);
+	background-image: url(../images/neonBackground.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
