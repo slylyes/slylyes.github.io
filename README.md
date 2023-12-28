@@ -1,4 +1,4 @@
-# Portfolio        By   Lyes SID ALI
+# Portfolio        By   Lyes SID ALI
 
 
 Voici les fichiers html, css, javascript de mon portfolio que vous pouvez voir en clickant sur le lien suivant : [Cliquez ici pour visiter mon portfolio](http://slylyes.github.io)
