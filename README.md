@@ -5,6 +5,7 @@ Voici les fichiers html, css, javascript de mon portfolio que vous pouvez voir e
 
 Ce portfolio est une page web responsive réalisée avec Visual Studio Code, en utilisant html pour la mise en page, css pour la stylisation, javascript pour les effets de dynamisme de la page, bootstrap pour adapter la page a tout les formats d'écrans.
 
+Voici un aperçu de la page d'acceuil : 
 ![Aperçu du Portfolio](screenshot.png)
 
 
