@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Retro Gaming';
-	src: url(/home/lyes/L2/Web/projets-web/site-10-portfolio/styles/Retro\ Gaming.ttf) format('woff2');
+	src: url(Retro\ Gaming.ttf) format('woff2');
 
 }
 
@@ -22,14 +22,35 @@
 
 
 body {
-	background-image: url(/home/lyes/L2/Web/projets-web/site-10-portfolio/images/neonBackground.jpg);
+	background-image: url(../images/spaceInvadersBackground.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 
-
 }
+
+/* styles.css */
+
+.tricher {
+    display: inline-block;
+    background-color: #000000;
+    color: #ff0000;
+    border: 2px solid #ff0000; 
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+
+.tricher:hover {
+    background-color: #ff0000;
+    color: #000000;
+}
+
+
 
 /* Header*/
 
@@ -179,57 +200,21 @@ h2+p {
 	color: #ffc500;
 }
 
-.aspect {
-	width: 10%;
-	padding: 20px;
-	margin-left: 180px;
-	margin-right: 150px;
-	display: inline-block;
+.skills{
+	display: flex;
+	justify-content: space-evenly;
 }
 
-@media(max-width:960px) {
-	.aspect {
-		width:30%;
-		display: block;
-		margin: 0;
-
-	}
+.skills img{
+	width: 13%;
+	border-radius: 100%;
 }
 
-@media(max-width:720px) {
-	.aspect {
-		width:40%;
-		display: block;
-		margin: 0;
-	}
+.titres{
+	display: flex;
+	justify-content: space-evenly;
+	font-size:x-large;
 }
-
-
-.label span {
-	font-size: x-large;
-	margin-left: 164px;
-	margin-right: 135px;
-}
-
-@media(max-width:960px) {
-	.label span {
-		display: block;
-		position: relative;
-		left: 172px;
-		bottom: 810px;
-		margin: 200px;
-	}
-}
-
-@media(max-width:720px) {
-	.label span {
-		font-size: large;
-		margin-left: 0px;
-		margin-right: 120px;
-	}
-}
-
-
 
 u {
 	color: #ffc500;
@@ -238,8 +223,8 @@ u {
 #etoile {
 	width: 1%;
 	position: fixed;
-	bottom: 517px;
-	left: 269px;
+	bottom: 406px;
+	left: 202px;
 
 }
 
@@ -254,9 +239,6 @@ u {
 
 }
 
-#tricher {
-	background-color: white;
-}
 
 /*FORMATIONS*/
 
@@ -272,22 +254,24 @@ u {
 	}
 }
 
-#licence {
+
+.formation {
 	width: 40%;
 	margin: 50px;
 	padding: 30px;
 }
 
 
-#licence p {
+.annee{
 	position: relative;
-	left: 829px;
-	bottom: 61px;
+	left: 919px;
+	bottom: 93px;
 	font-size: xx-large;
 }
 
+
 @media(max-width:960px){
-	#licence p {
+	.annee{
 		position: relative;
 		left: 374px;
 		bottom: 143px;
@@ -297,95 +281,28 @@ u {
 }
 
 @media(max-width:720px){
-	#licence{
+	.formation{
 		width:70%;
 	}
-	#licence h3{
+	.formation h3{
 		font-size: larger;
 	}
 }
 
-#portail {
-	width: 40%;
-	margin-left: 770px;
-	padding: 30px;
-}
-
-
-#portail p {
-	position: relative;
-	right: 500px;
-	bottom: 61px;
-	font-size: xx-large;
-}
-
 
 @media(max-width:960px){
-	#portail {
+	.formation {
 		margin-left: 50px;
 		padding: 30px;
 	}
-	#portail p{
+	.annee{
 		left:374px;
 		bottom:143px;
 	}
 	
 }
-@media(max-width:720px){
-	#portail{
-		width:70%;
-	}
-	#portail h3{
-		font-size: larger;
-	}
-}
-#bac {
-	width: 40%;
-	margin: 30px;
-	padding: 30px;
-}
-
-#bac p{
-	position: relative;
-	left: 829px;
-	bottom: 61px;
-	font-size: xx-large;
-}
-
-@media(max-width:960px){
-	#bac {
-		margin-left: 50px;
-		padding: 30px;
-	}
-	#bac p{
-		left:374px;
-		bottom:143px;
-	}
-}
 
 
-@media(max-width:720px){
-	#bac{
-		width:70%;
-	}
-	#bac h3{
-		font-size: larger;
-	}
-}
-
-.timeline:after {
-	content: "";
-	position: absolute;
-	top: 20px;
-	bottom: 20px;
-	left: 47%;
-	width: 5px;
-	background: white;
-	border-radius: 3px;
-	z-index: 1;
-	margin-top: 260px;
-	margin-bottom: 170px;
-}
 
 @media(max-width:960px){
 	.timeline:after{
@@ -394,11 +311,49 @@ u {
 }
 
 
+#enigme{
+	font-family: cursive;
+	font-size:xx-large;
+	text-align: center;
+}
+
+#reponse{
+    color: #ffffff; 
+    background-color: #000000; 
+    border: 2px solid #ffffff; 
+    border-radius: 6px; 
+    outline: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#reponse:focus {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+
+#cle{
+	width: 8%;
+	animation: zoom 1s forwards;
+	justify-self: center;
+}
+
+
 
 .images {
 	width: 6%;
 	display: inline-block;
+	animation: zoom 1s forwards;
 }
+
+#enigme{
+	background-color: rgba(0, 0, 0, 0.7);
+	backdrop-filter: blur(5px);
+	border-radius: 35px;
+	padding: 30px;
+	width: 45%;
+}
+
 
 
 
@@ -415,6 +370,20 @@ u {
 	}
 }
 
+#goku{
+	width: 10%;
+}
+
+.bubble {
+	position: relative;
+	max-width: 650px;
+	padding: 20px;
+	background-color: #ffffff;
+	color: #000000;
+	border-radius: 50px; 
+}
+
+
 /* Contact */
 #contact h2 {
 	text-align: center;
@@ -427,17 +396,22 @@ u {
 		font-size: 30px;
 	}
 }
-form{
-	display: block;
-}
 
-form input{
-	margin: 10px;
-	padding: 10px;
-}
 
 #contact p{
 	color:white;
+}
+
+.img {
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	margin: 20px; 
+}
+
+.lien {
+	width: 77px; 
+	margin: 45px;
 }
 
 /* Footer */
