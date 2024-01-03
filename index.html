@@ -6,10 +6,9 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport">
 	<title>Lyes SID ALI - Portfolio</title>
-	<link rel="stylesheet" href="/home/lyes/L2/Web/projets-web/site-10-portfolio/styles/style.css" type="text/css">
-	<link rel="stylesheet" href="/home/lyes/L2/Web/projets-web/site-10-portfolio/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/home/lyes/L2/Web/projets-web/site-10-portfolio/styles/glitch.css">
-
+	<link rel="stylesheet" href="styles/style.css" type="text/css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/glitch.css">
 
 </head>
 
@@ -64,9 +63,13 @@
 				temps.
 				<br>Voici quelques-unes de mes principales compétences, en particulier mes compétences non techniques, communément appelées "Soft Skills" : <br>
 			</p>
-			<img src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/lampe.png" alt="image" class="aspect">
-			<img src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/engrenage.png" alt="image" class="aspect">
-			<img src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/coin.png" alt="image" class="aspect ">
+			<div class="skills">
+				<img src="images/lampe2.png" alt="image">
+				<img src="images/equipe.jpg" alt="image">
+				<img src="images/determinisation.jpg" alt="image">
+				<img src="images/curiosite.png" alt="image">
+				<img src="images/stress.jpg" alt="image">
+			</div>
 			<br>
 			<div class="titres">
 				<span>Créativité</span>
@@ -82,11 +85,10 @@
 
 			<p>Une étoile est cachée quelque part, trouvez la et appuyez dessus afin d'accèder au niveau 2 !</p>
 			<p><u>Indice : Soyez créatifs !</u></p>
-			<p>Vous ne trouvez pas ?</p>
-			<button id="tricher">Tricher</button>
+			<span>Vous ne trouvez pas ?    </span>
+			<button class="tricher" id="tricher">Tricher</button>
 
-			<a href="#posf"><img src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/etoile.png" alt="image"
-					id="etoile"></a>
+			
 
 		</div>
 
@@ -133,25 +135,51 @@
 
 
 			<!--Compétences en images-->
-			<h3>Compétences</h3>
-			<div id="images">
-				<img class="images" src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/python.png" alt="image">
-				<img class="images" src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/c.png" alt="image">
-				<img class="images" src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/jupyter.png"
+			<br>
+			<p>Avant de réaliser un projet, il faut d'abord débloquer les compétences requises.</p>
+			<p>Pour accéder au prochain niveau, vous devez d'abord résoudre cette énigme qui vous permettera
+				d'avoir la clé pour ouvrir le coffret des compétences : </p>
+
+			<center>
+			<p id="enigme">Quand tu m'as, tout s'ouvre devant toi,<br>
+				Je suis petite, mais ma puissance est là.<br>
+				Le prisonnier espère, en moi, trouver la libérté,<br>
+				Qui suis-je donc, dans cette énigme présentée ?
+			</p>
+
+			
+				<label for="reponse">Votre réponse :</label>
+				<input type="text" id="reponse" placeholder="Entrez votre réponse">
+				<button onclick="verifierReponse()">Vérifier</button>
+			</center>
+		
+			<p><u> Indice : La réponse est sous vos yeux !</u></p>
+			<span>Vous ne trouvez pas ?</span>
+			<button class="tricher" onclick="afficheCle()">Tricher</button>
+			<center><a><img src="images/cle.png" alt="image" id="cle" style="display: none;"></a></center>
+			<br><br>
+			
+			<div id="images" style="display: none;">
+				<img class="images" src="images/python.png" alt="image">
+				<img class="images" src="images/c.png" alt="image">
+				<img class="images" src="images/jupyter.png" alt="image">
+				<img class="images" src="images/java.png" alt="image">
+				<img class="images" src="images/bash.png" alt="image">
+				<img class="images" src="images/html.png" alt="image">
+				<img class="images" src="images/css.png" alt="image">
+				<img class="images" src="images/javascript.png"
 					alt="image">
-				<img class="images" src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/java.png" alt="image">
-				<img class="images" src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/bash.png" alt="image">
-				<img class="images" src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/html.png" alt="image">
-				<img class="images" src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/css.png" alt="image">
-				<img class="images" src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/javascript.png"
+				<img class="images" src="images/bootstrap.png"
 					alt="image">
-				<img class="images" src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/bootstrap.png"
-					alt="image">
-				<img class="images" src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/vscode.png" alt="image">
-				<img class="images" src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/sql.png" alt="image">
-				<img class="images" src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/php.png" alt="image">
-				<img class="images" src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/office.png" alt="image">
-				<img class="images" src="/home/lyes/L2/Web/projets-web/site-10-portfolio/images/canva.png" alt="image">
+				<img class="images" src="images/vscode.png" alt="image">
+				<img class="images" src="images/sql.png" alt="image">
+				<img class="images" src="images/php.png" alt="image">
+				<img class="images" src="images/office.png" alt="image">
+				<img class="images" src="images/canva.png" alt="image">
+				<img class="images" src="images/ocaml.png" alt="image">
+				<br>
+				<p>Bravo ! <br> vous avez maintenant débloqué les compétences requises pour accéder au niveau 3.</p>
+				<button id="affiche">Afficher les projets</button>
 			</div>
 
 			
