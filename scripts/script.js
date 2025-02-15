@@ -13,7 +13,7 @@
 
 
 /* Texte d'acceuil */
-const welcomeText = "Bonjour, moi c'est Lyes SID ALI et bienvenu sur mon porfolio !";
+const welcomeText = "Bonjourrrrr, moi c'est Lyes SID ALI et bienvenu sur mon porfolio !";
 const contentText = "Vous allez être embarqué dans un univers spécial dans quelques instants, Appuyez sur le bouton ci dessous afin d'accéder au premier niveau pour en savoir plus sur moi.";
 let welcomeIndex = 0;
 let contentIndex = 0;
