@@ -15,8 +15,7 @@ Vous pouvez retrouver dans mon portfolio une présentation de mon parcours et me
 
 ## Etat du projet
 
-En cours de développement (70% du rendu final):
-_quelques corrections a apporter pour la responsive et les differences de polices d'écritures entre les systèmes d'exploitation
-_des modifications seront appliquées car je trouve des inspirations et des idées meilleures qui seront ajoutées au fil du temps jusqu'a avoir un rendu parfait et à la hauteur de mes attentes
-_développer les rubriques "Projets" et "Formations & Compétences" 
+Le portfolio est terminé, il reste des possibilité d'amélioration que je ferai quand j'aurai le temps.
+!!! Dernière mise à jour : Mars 2024 !!!
+" 
 
